@@ -10,7 +10,7 @@ const __dirname = dirname(__filename);
 const isGitHubPages = process.env.GITHUB_PAGES === "true";
 
 export default defineConfig({
-  base: isGitHubPages ? "/poort/" : "/",  // Use '/' for local dev, "/myporta/" for GitHub Pages
+  base: isGitHubPages ? "/port3/" : "/",  // Use '/' for local dev, "/myporta/" for GitHub Pages
   plugins: [react()],
   resolve: {
     alias: {
@@ -20,7 +20,7 @@ export default defineConfig({
   },
   root: path.resolve(__dirname, "client"),
   build: {
-    outDir: path.resolve(__dirname, "dist"),
+    outDir: path.resolve(__dirname, "build"),
     emptyOutDir: true,
   },
   server: {
